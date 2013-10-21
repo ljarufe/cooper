@@ -1,0 +1,167 @@
+{% load querytags %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equi-UA-Compatible" content="IE=8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>La Cooper | {{ titulo }}</title>
+		
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}search_box/search_box.css" />
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}SpryAssets/SpryMenuBarHorizontal.css" />
+        
+        <!-- Carga de estilo para el Internet Explorer 6 -->
+		<!--[if IE 6]>
+        <link rel="stylesheet" type="text/css" href="/media/css/ie6.css" media="screen" />
+        <![endif]-->
+        <meta name="keywords" content="" />
+        
+		<script type="text/javascript" src="{{ MEDIA_URL }}js/common/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/common/iepngfix/iepngfix_tilebg.js"></script>
+        <script type="text/javascript" src="{{ MEDIA_URL }}SpryAssets/SpryMenuBar.js"></script>
+		<script type="text/javascript" src="{{ MEDIA_URL }}js/common/base.js"></script>
+		<script type="text/javascript" src="{{ MEDIA_URL }}search_box/jquery.search_box.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    // TODO: Cambiar la forma de obtener la url
+			    json_fastquery_url = "/productos/json_fastcooper/";
+				$('#search_box_input').SearchBox(json_fastquery_url, mostrar_busqueda);
+			})
+		</script>	
+		
+		{% block head %}
+		{% endblock %}
+
+	</head>
+	<body>
+    
+    	<!-- Cabecera -->
+    	<div id="cabecera">
+        	<div class="contenedor">
+                <div id="superior">
+                	
+                    <!-- Logo -->
+                    <div id="logo">
+                        <a href="{% url inicio %}">
+                        	<img src="{{ MEDIA_URL }}img/recursos/logo.png"/>
+                        </a>
+                    </div>
+                    
+                    <!-- Lado Derecho -->
+                    <div id="option">
+                        <div id="sec_superior">
+                             <ul>
+                             	<li id="li_inicio_sesion"><span id="user">{% if user.is_authenticated %}<a href="#">{{ user }}</a>{% else %}<a href="#">Ingresar</a>{% endif %}</span><span class="vinieta vinieta_ie6" >•</span>
+                                <!-- Login form -->
+                                <div id="inicio_sesion">
+                                    <div id="inicio_sesion_top"></div>
+                                    <div id="inicio_sesion_body">
+                                    <div id="inicio_sesion_head_img">
+                                    <form method="post" action="{% url inicio %}">
+                                        <div>
+                                        {% if user.is_authenticated %}
+                                            <div id="sesion_in">
+                                                <p class="bienvenido">¡Bienvenido!</p>
+                                                {% if perms.auth.puede_chat %}
+                                                    <!-- TODO: Cambiar inicio por ayuda_clientes -->
+                                                    <p>Ingresar al área de <a href="{% url ayuda_clientes %}">Asistencia al Cliente</a></p>
+                                                {% endif %}
+                                                {% if perms.auth.puede_ayuda %}
+                                                    <!-- El código esta en managers_list.html -->
+                                                    <p>Ponte en contacto con las siguientes áreas: {% get_managers %}</p>      
+                                                {% endif %}
+                                                <div class="cerrar_sesion" ><a href="{% url cerrar_sesion %}">Cerrar sesi&oacute;n</a></div>
+                                            </div>
+                                        {% else %}
+                                            <table>
+                                                <tr>
+                                                    <td class="label">Usuario</td>
+                                                    <td><input class="input" type="text" name="usuario" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="label">Contraseña</td>
+                                                    <td><input class="input" type="password" name="password" /></td>
+                                                </tr>     
+                                            </table>                                   
+                                            <div id="incorrecto">
+                                                {% if usuario_invalido %}
+                                                <script type="text/javascript">
+                                                    hola();
+                                                </script>
+                                                <div><img src="{{ MEDIA_URL }}img/recursos/incorrecto_icon.png"/> Usuario o Contraseña incorrecto.</div>
+                                                {% endif %}
+                                            </div>
+                                            <table>
+                                                <tr>
+                                                    <td id="inicio_sesion_pie"><a href="{% url recuperar_password %}">Recuperar Contraseña</a></td>
+                                                    <td id="ingresar_td"><input  type="submit" value="Ingresar"></td>
+                                                </tr>
+                                            </table>
+                                        {% endif %}
+                                        </div>
+                                    </form>
+                                    </div>
+                                    </div>
+                                    <div id="inicio_sesion_bottom"></div>
+                                </div>
+                        
+                                </li>
+                            	<li><a class="vinieta_ie6" href="{% url sitemap %}">Mapa del Sitio</a><span class="vinieta barra" ></span></li>
+                            	<li class="last">Buscar <input id="search_box_input" type="text" /></li>
+                           	</ul>
+                        </div>
+                         
+                        <div id="sec_inferior">
+                        	<ul>
+                                <li><a href="{% url nosotros %}">La Cooper es</a><span class="vinieta" >•</span></li>
+                                <li><a href="{% url practicas %}">Prácticas</a><span class="vinieta" >•</span></li>
+                                <li><a href="{% url acreditaciones %}">Acreditaciones</a><span class="vinieta" >•</span></li>
+                                <li><a href="{% url blog %}">Blog</a><span class="vinieta" >•</span></li>
+                                <li class="last"><a href="{% url contacto %}">Cont&aacute;ctanos</a></li>
+                        	</ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Banner principal de la cabecera -->
+                <div id="banner">{% get_banners %}</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <!-- Cuerpo incluido el segundo menú y el pie-->
+        <div id="cuerpo">
+        	<div class="contenedor">
+                <div id="menu_categorias">
+                    {% get_menu_categorias %}                
+                </div>
+
+                <div id="plantillas_cuerpo">
+                    <div id="panel_izq">
+	                    {% block body %}
+	                    {% endblock %}
+                    </div>
+        			<div id="panel_der">
+	                    {% block ofertas %}
+						{% get_ofertas %}
+						<a href="{% url subscripcion %}"><div class="boton informes">¿Deseas informarte de las últimas novedades de La Cooper?</div></a>
+	                    <a href="/common/feeds/"><div class="boton rss">Suscribete a las noticias RSS de La Cooper</div></a>
+	                    {% endblock %}
+                    </div>
+                </div>
+                
+                <div class="clear" ></div>
+                <div class="footer">
+                	<div class="text">Laboratorios La Cooper - Diseño y Desarrollo del Sitio Web por <a href="http://www.aqpnet.com">AQPNET</a></div>
+                </div>
+            </div>
+ 		</div>
+        <script type="text/javascript">
+			var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"{{ MEDIA_URL }}SpryAssets/SpryMenuBarDownHover.gif", imgRight:"{{ MEDIA_URL }}SpryAssets/SpryMenuBarRightHover.gif"});
+			inicio_sesion();
+			user();
+		</script> 
+	</body>
+</html>

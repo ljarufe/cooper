@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+   <link href="{{ MEDIA_URL }}css/blog/blog.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+	<div id="indice_posts">
+        <h1>Lista de posts</h1>
+        <ul>
+        {% for post in indice_posts %}
+            <li>
+                <span class="lista"><a href="{% url blog post.id %}">{{ post.titulo }}</a></span><span class="desc"> Publicado el {{ post.fecha|date:"l d \d\e F \d\e\l Y" }}</span>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* Estilos Generales */
+	body{
+		background: #BAE0E3 url(../../img/recursos/chat.png) top center repeat-x;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		width: 100%;
+	}
+	
+	h1, h2, h3 {
+		margin: 0;
+		padding: 0;
+		font-weight: normal;
+	}
+	
+	h1{
+		color: #466F8A;
+		font-size: 21px;
+		text-align: right;
+	}
+	
+	h2{
+		color: #113356;
+		font-size: 12px;
+		text-align: right;
+	}
+	
+	p{
+		margin: 0px;
+	}
+	
+	ul {
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.clear {
+		clear: both;
+	}
+	
+	table{
+		border-collapse: collapse;
+		border: none;
+		width: 100%;
+	}
+	
+	
+/* Estilos Específicos */
+	#cabecera {
+		text-align: center;
+	}
+	
+	#cuerpo {
+		padding: 0px 10px 10px;
+	}
+	
+		#cuerpo #user {
+			color: #466F8A;
+			border-bottom: 1px solid #CBD8DF;
+			padding-bottom: 3px;
+			margin-bottom: 3px;
+		}
+	
+		#cuerpo #frame{
+			background: #F7FBFC;
+			padding: 5px;
+			margin: 5px 0px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+		}
+		
+			#cuerpo #input_box{
+				height: 235px;
+				overflow: auto;
+				color: #333;
+			}
+			
+			#cuerpo #chat_frame textarea, #cuerpo #chat_frame button {
+				-moz-border-radius: 7px;
+				border-radius: 7px;
+				margin: 0px;
+				border: 0px;
+				padding: 5px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				height: 30px;
+				float: left;
+				color: #333;
+			}
+			
+			#cuerpo #chat_frame #textarea {
+				width: auto;
+			}
+			
+				#cuerpo #chat_frame textarea {
+					width: 100%;
+				}
+			
+			#cuerpo #chat_frame #button{
+				width: 60px;
+				
+			}
+
+				#cuerpo #chat_frame button{
+					width: 45px;
+					height: 40px;
+					float: right;
+				}
+				
+	/* Estilos específicos */
+	
+	#chat-frame > div {
+		width: 250px;
+		float: left;
+		background: #F7FBFC;
+		padding: 5px;
+		margin: 5px 0px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		
+		color: #333;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	
+	#chat-frame .messages {
+		height: 235px;
+		overflow: auto;
+	}
+	
+	#chat-frame h3 {
+		text-transform: capitalize;
+		font-weight: bold;
+		border-bottom: 1px solid #CBD8DF;
+		color: #466F8A;
+		padding-bottom: 3px;
+		margin-bottom: 3px;
+	}
+	
+	#chat-frame .form {
+		
+		padding: 0px;
+		margin: 5px 0px 0px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	
+	#chat-frame .form input, #chat-frame .form button {
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		margin: 0px;
+		border: 0px;
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #333;
+	}
+	
+	#chat-frame .form input {
+		background: #E1F1F2;
+		width: 190px;
+	}
+	
+	#chat-frame .form button { 
+		width: 45px;
+		float: right;
+	}
+	

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load form_display %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/empresa/suscripcion.css"/>
+{% endblock %}
+
+{% block body %}
+	<h2 class="formulario">Formulario de Subscripci&oacute;n</h2>
+    <div id="subscripcion">
+        <form action="" method="post" class="formulario">{% csrf_token %}
+        <ul>
+            <!-- TODO: Mostrar la lista de intereses en forma horizontal -->
+            {% display_as_ul form %}
+            <li class="help">Los campos marcados con(*) son obligatorios</li>
+            <li><input class="submit" type="submit" value="Suscribirse"/></li>
+        </ul>
+        </form>
+	</div>       
+{% endblock %}

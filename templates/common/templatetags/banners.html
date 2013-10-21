@@ -1,0 +1,20 @@
+<script>
+	window.onload = function(){
+		var array_img = $("#banner img");
+		var i = 0;
+		$(array_img[0]).show();
+		setInterval(function(){
+			$(array_img[i]).hide();
+			$(array_img[i+1]).fadeIn();
+			i++;
+			if(i==array_img.length){
+				i = 0;
+				$(array_img[i]).fadeIn();
+			}
+		},5000)
+	}
+</script>
+	<img id="principal" src="../../../media/img/recursos/banner_principal.png" />
+{% for i in banners %}
+    <img src="{{ i.imagen.thumbnail }}" />
+{% endfor %}

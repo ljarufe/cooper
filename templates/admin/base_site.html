@@ -1,0 +1,31 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Administracion Giant' %}{% endblock %}
+
+{% block branding %}
+<style>
+	#branding #div_img {
+		float: left;
+		width: 270px;
+	}
+	#branding h1 {
+		display: inline-block;
+		margin-top: 35px;
+		padding: 0px;
+		vertical-align: top; 
+	}
+	.login #branding #div_img {
+		float: none;
+		margin: 5px auto;
+	}
+	
+	.login #branding h1 {
+		display: none;
+	}
+</style>
+<div id="div_img"><img src="{{ MEDIA_URL }}img/recursos/logo.png" /></div>
+<h1 id="site-name">{% trans 'Administracion Laboratorios La Cooper' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

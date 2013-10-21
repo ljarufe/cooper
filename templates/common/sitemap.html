@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/css/common/sitemap.css"/>
+{% endblock %}
+{% block body %}
+<h2>Mapa del Sitio Web</h2>
+	<div id="sitemap">
+        <ul>
+            <li>
+                <a href="{% url nosotros %}">La Cooper es</a>
+                <ul>
+                    <li>Historia</li>
+                    <li>Misión</li>
+                    <li>Visión</li>
+                    <li>Valores</li>
+                </ul>
+            </li>
+            <li>
+                Productos
+                <ul>
+                    {% for item in menu %}
+                    <li>
+                        {{ item.categoria.nombre }}
+                        <ul>
+                        {% for tipo in item.tipos %}
+                            <li>
+                                <a href="{% url destacados item.categoria.id tipo.id %}">{{ tipo.nombre }}</a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                </ul>
+            <li>
+                <a href="{% url practicas %}">Prácticas</a>
+                <ul>
+                {% for practica in practicas %}
+                    <li>{{ practica.titulo }}</li>
+                {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <a href="{% url acreditaciones %}">Acreditaciones</a>
+                <ul>
+                {% for acreditacion in acreditaciones %}
+                    <li>{{ acreditacion.nombre }}</li>
+                {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <a href="{% url blog %}">Blog</a>
+            </li>
+            <li>
+                <a href="{% url contacto %}">Contáctanos</a>
+            </li>
+            <li>
+                <a href="{% url subscripcion %}">Subscripción</a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

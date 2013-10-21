@@ -1,0 +1,44 @@
+{% extends 'chat_base.html' %}
+
+{% block head %}
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/clientes/ayuda_en_linea.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		var sender = "{{ user }}";
+		var destination = "/{{ manager.username }}/{{ user }}";
+		var manager_name = "{{ manager.username }}";
+		
+	    var url_send_message = "{% url send_message %}";
+        var url_manager_request = "{% url manager_request %}";
+        var url_sound = "{{ MEDIA_URL }}sound/alert.wav";
+		
+		Orbited.settings.port = {{ port }};
+	    Orbited.settings.hostname = "{{ hostname }}";
+	    TCPSocket = Orbited.TCPSocket
+	</script>
+{% endblock %}
+
+{% block body %}
+	<h1>Asistencia en l&iacute;nea</h1>
+    <h2>A cargo de {{ manager.get_full_name }}</h2>
+	
+    <div id="frame">
+        <div id="user">
+            <ul>
+                <li>{{ user.get_full_name }}: <span id="status"></span></li>
+                <li>Opciones: <span id="sonido">Desactivar sonido</span></li>
+            </ul>
+            <input type="hidden" name="user" value="{{ user }}" id="user">
+        </div>
+        <div id="input_box"></div>
+    </div>
+    <div id="chat_frame">
+    	<table>
+        	<tr>
+            	<td id="textarea"><textarea type="text" id="message"></textarea></td>
+                <td id="button"><button id="send">Enviar</button></td>
+            </tr>
+        </table>
+    </div>
+    
+{% endblock %}

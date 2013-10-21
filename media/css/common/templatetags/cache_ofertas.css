@@ -1,0 +1,37 @@
+#ofertas-panel {
+	margin-bottom: 10px;
+}
+
+#ofertas {
+	height: 220px;
+	overflow: hidden;
+}
+
+	#ofertas img{
+		width: 200px;
+		height: 220px;
+		border: 0px;
+	}
+
+#ofertas #botonera {
+	background: url(../../../img/recursos/botonera.png);
+	width: 50px;
+	height: 20px;
+	float: right;
+	position: relative;
+	top: -35px;
+	left: -10px;
+	padding: 5px;
+}
+
+	#ofertas #botonera .flecha {
+		background: transparent;
+		width: 20px;
+		height: 20px;
+		float: left;
+		cursor: pointer;
+	}
+	
+	#ofertas #botonera #ant {
+		margin-right: 10px;
+	}

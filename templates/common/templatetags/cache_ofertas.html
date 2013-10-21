@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/common/templatetags/cache_ofertas.css" media="screen" />
+<script type="text/javascript" src="{{ MEDIA_URL }}js/common/templatetags/cache_ofertas.js"></script>
+
+<div id="ofertas-panel">
+    <h2>Nuestras Ofertas</h2>
+    <div id="ofertas">
+        <a href="{% url ofertas %}"><div class="imagen"><img src="{{ MEDIA_URL }}img/recursos/ofertas_cover.gif" /></div></a>
+        <div id="botonera">
+        	<div id="ant" class="flecha"></div>
+        	<div id="sig" class="flecha"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	var urls = new Array();
+	{% for oferta in ofertas %}
+		urls.push("{{ oferta.imagen.extra_thumbnails.oferta }}");
+	{% endfor %}
+	ofertas(urls);
+</script>

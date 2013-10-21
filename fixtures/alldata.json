@@ -1,0 +1,2285 @@
+[
+    {
+        "pk": 14, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "acreditacion", 
+            "name": "Acreditaci\u00f3n", 
+            "app_label": "empresa"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "banner", 
+            "name": "banner", 
+            "app_label": "common"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "categoria", 
+            "name": "Categor\u00eda", 
+            "app_label": "productos"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "comentario", 
+            "name": "comentario", 
+            "app_label": "blog"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "empresa", 
+            "name": "empresa", 
+            "app_label": "empresa"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "message", 
+            "name": "message", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "post", 
+            "name": "post", 
+            "app_label": "blog"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "practica", 
+            "name": "Pr\u00e1ctica", 
+            "app_label": "empresa"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "producto", 
+            "name": "producto", 
+            "app_label": "productos"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "subscripcion", 
+            "name": "Subscripci\u00f3n", 
+            "app_label": "clientes"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "tipo", 
+            "name": "tipo", 
+            "app_label": "productos"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 12:07:01", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07 comentado por Luis Jarufe", 
+            "object_id": "1", 
+            "change_message": "Modificado/a fecha y estado.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 12:06:54", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07 comentado por Jorge Concha", 
+            "object_id": "2", 
+            "change_message": "Modificado/a fecha y estado.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 12:06:49", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07 comentado por La tirgesa del oriente", 
+            "object_id": "3", 
+            "change_message": "Modificado/a fecha y estado.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 12:06:43", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07 comentado por Delf\u00edn", 
+            "object_id": "4", 
+            "change_message": "Modificado/a fecha y estado.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:30:13", 
+            "object_repr": "El m\u00e1s corrosivo - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintoc", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 11:23:37", 
+            "object_repr": "Panadol - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lati", 
+            "object_id": "1", 
+            "change_message": "Modificado/a estado.", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 11:23:30", 
+            "object_repr": "Sulfanil - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "2", 
+            "change_message": "Modificado/a estado.", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 11:23:22", 
+            "object_repr": "Bensonil - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "3", 
+            "change_message": "Modificado/a estado.", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:21:17", 
+            "object_repr": "Aceite de almendra", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:21:05", 
+            "object_repr": "Cianuros", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:19:43", 
+            "object_repr": "Base F", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:19:34", 
+            "object_repr": "Base A", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:19:11", 
+            "object_repr": "Lavativa - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:18:39", 
+            "object_repr": "Composalmina - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:18:36", 
+            "object_repr": "\u00c1cido B", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:17:48", 
+            "object_repr": "Bensonil - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:17:00", 
+            "object_repr": "Sulfanil - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:16:09", 
+            "object_repr": "Panadol - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lati", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:16:05", 
+            "object_repr": "Acido A", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:13:12", 
+            "object_repr": "Lociones", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:13:06", 
+            "object_repr": "Pomadas", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:12:47", 
+            "object_repr": "Bases", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:12:41", 
+            "object_repr": "\u00c1cidos", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:12:29", 
+            "object_repr": "T\u00f3xicos", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:08:16", 
+            "object_repr": "La recucuncuncun", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:07:36", 
+            "object_repr": "Seguridad X", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:07:21", 
+            "object_repr": "Practica X", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:07:06", 
+            "object_repr": "No hay m\u00e1s que decir", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:06:49", 
+            "object_repr": "Pr\u00e1cticas lelale", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:06:27", 
+            "object_repr": "Que tal p\u00ebactica", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:06:05", 
+            "object_repr": "La Cooper", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:05:12", 
+            "object_repr": "La Concha", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:04:40", 
+            "object_repr": "ISO 9001", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:04:23", 
+            "object_repr": "CONEIS", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:04:04", 
+            "object_repr": "El buen IEEE", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:03:49", 
+            "object_repr": "La recontra ISO", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:03:22", 
+            "object_repr": "Este banner es una joda", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:00:20", 
+            "object_repr": "Este banner la rompe", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:59:22", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:59:02", 
+            "object_repr": "Pero si de nuevo estamos co lo mismo por Capitan en 2010-09-07", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:58:39", 
+            "object_repr": "Ahora si vamo con todo por Capitan en 2010-09-07", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 10:56:57", 
+            "object_repr": "luisjarufe", 
+            "object_id": "3", 
+            "change_message": "Modificado/a first_name, last_name, email y groups.", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:56:44", 
+            "object_repr": "luisjarufe", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 10:56:18", 
+            "object_repr": "Capitan", 
+            "object_id": "2", 
+            "change_message": "Modificado/a first_name, last_name, email y groups.", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:55:53", 
+            "object_repr": "Capitan", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 12:07:01", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07 comentado por Luis Jarufe", 
+            "object_id": "1", 
+            "change_message": "Modificado/a fecha y estado.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 12:06:54", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07 comentado por Jorge Concha", 
+            "object_id": "2", 
+            "change_message": "Modificado/a fecha y estado.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 12:06:49", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07 comentado por La tirgesa del oriente", 
+            "object_id": "3", 
+            "change_message": "Modificado/a fecha y estado.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 12:06:43", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07 comentado por Delf\u00edn", 
+            "object_id": "4", 
+            "change_message": "Modificado/a fecha y estado.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:30:13", 
+            "object_repr": "El m\u00e1s corrosivo - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintoc", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 11:23:37", 
+            "object_repr": "Panadol - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lati", 
+            "object_id": "1", 
+            "change_message": "Modificado/a estado.", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 11:23:30", 
+            "object_repr": "Sulfanil - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "2", 
+            "change_message": "Modificado/a estado.", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 11:23:22", 
+            "object_repr": "Bensonil - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "3", 
+            "change_message": "Modificado/a estado.", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:21:17", 
+            "object_repr": "Aceite de almendra", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:21:05", 
+            "object_repr": "Cianuros", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:19:43", 
+            "object_repr": "Base F", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:19:34", 
+            "object_repr": "Base A", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:19:11", 
+            "object_repr": "Lavativa - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:18:39", 
+            "object_repr": "Composalmina - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:18:36", 
+            "object_repr": "\u00c1cido B", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:17:48", 
+            "object_repr": "Bensonil - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:17:00", 
+            "object_repr": "Sulfanil - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lat", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:16:09", 
+            "object_repr": "Panadol - Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Lati", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:16:05", 
+            "object_repr": "Acido A", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:13:12", 
+            "object_repr": "Lociones", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:13:06", 
+            "object_repr": "Pomadas", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:12:47", 
+            "object_repr": "Bases", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:12:41", 
+            "object_repr": "\u00c1cidos", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:12:29", 
+            "object_repr": "T\u00f3xicos", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:08:16", 
+            "object_repr": "La recucuncuncun", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:07:36", 
+            "object_repr": "Seguridad X", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:07:21", 
+            "object_repr": "Practica X", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:07:06", 
+            "object_repr": "No hay m\u00e1s que decir", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:06:49", 
+            "object_repr": "Pr\u00e1cticas lelale", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:06:27", 
+            "object_repr": "Que tal p\u00ebactica", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:06:05", 
+            "object_repr": "La Cooper", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:05:12", 
+            "object_repr": "La Concha", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:04:40", 
+            "object_repr": "ISO 9001", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:04:23", 
+            "object_repr": "CONEIS", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:04:04", 
+            "object_repr": "El buen IEEE", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:03:49", 
+            "object_repr": "La recontra ISO", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:03:22", 
+            "object_repr": "Este banner es una joda", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 11:00:20", 
+            "object_repr": "Este banner la rompe", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:59:22", 
+            "object_repr": "Esto es una total falta de respeto por luisjarufe en 2010-09-07", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:59:02", 
+            "object_repr": "Pero si de nuevo estamos co lo mismo por Capitan en 2010-09-07", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:58:39", 
+            "object_repr": "Ahora si vamo con todo por Capitan en 2010-09-07", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 10:56:57", 
+            "object_repr": "luisjarufe", 
+            "object_id": "3", 
+            "change_message": "Modificado/a first_name, last_name, email y groups.", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:56:44", 
+            "object_repr": "luisjarufe", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2010-09-07 10:56:18", 
+            "object_repr": "Capitan", 
+            "object_id": "2", 
+            "change_message": "Modificado/a first_name, last_name, email y groups.", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2010-09-07 10:55:53", 
+            "object_repr": "Capitan", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "blog.post", 
+        "fields": {
+            "titulo": "Ahora si vamo con todo", 
+            "fecha": "2010-09-07", 
+            "texto": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "usuario": 2
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "blog.post", 
+        "fields": {
+            "titulo": "Pero si de nuevo estamos co lo mismo", 
+            "fecha": "2010-09-07", 
+            "texto": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "usuario": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "blog.post", 
+        "fields": {
+            "titulo": "Esto es una total falta de respeto", 
+            "fecha": "2010-09-07", 
+            "texto": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "usuario": 3
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "blog.comentario", 
+        "fields": {
+            "fecha": "2010-09-07", 
+            "comentario": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.", 
+            "nombre": "Luis Jarufe", 
+            "post": 3, 
+            "estado": "M", 
+            "email": "luis.jarufe@hotmail.com"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "blog.comentario", 
+        "fields": {
+            "fecha": "2010-09-07", 
+            "comentario": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.", 
+            "nombre": "Jorge Concha", 
+            "post": 3, 
+            "estado": "M", 
+            "email": "luis.jarufe@hotmail.com"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "blog.comentario", 
+        "fields": {
+            "fecha": "2010-09-07", 
+            "comentario": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.", 
+            "nombre": "La tirgesa del oriente", 
+            "post": 3, 
+            "estado": "M", 
+            "email": "luis.jarufe@hotmail.com"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "blog.comentario", 
+        "fields": {
+            "fecha": "2010-09-07", 
+            "comentario": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.", 
+            "nombre": "Delf\u00edn", 
+            "post": 3, 
+            "estado": "M", 
+            "email": "luis.jarufe@hotmail.com"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "common.banner", 
+        "fields": {
+            "descripcion": "Para que necesito una descripci\u00f3n?", 
+            "nombre": "Este banner la rompe", 
+            "imagen": "img/common/coloured-circles-wallpapers_14921_1280x960.jpg"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "common.banner", 
+        "fields": {
+            "descripcion": "??", 
+            "nombre": "Este banner es una joda", 
+            "imagen": "img/common/fondo_multicolor-1280x800.jpg"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "empresa.empresa", 
+        "fields": {
+            "valores": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "direccion": "Los arrayanes 113 - Sachaca", 
+            "historia": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "mision": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "La Cooper", 
+            "telefono": "254800", 
+            "email": "luis.jarufe@hotmail.com", 
+            "vision": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "empresa.acreditacion", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "La recontra ISO", 
+            "imagen": "img/empresa/colores_1.jpg"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "empresa.acreditacion", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "El buen IEEE", 
+            "imagen": "img/empresa/lightsymphonia27bylove1008.jpg"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "empresa.acreditacion", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "CONEIS", 
+            "imagen": "img/empresa/x4vsvylium.jpg"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "empresa.acreditacion", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "ISO 9001", 
+            "imagen": "img/empresa/ryan.jpg"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "empresa.practica", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "titulo": "Que tal p\u00ebactica", 
+            "imagen": "img/empresa/simon-spectro.jpg"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "empresa.practica", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "titulo": "Pr\u00e1cticas lelale", 
+            "imagen": "img/empresa/scorpion-sting.jpg"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "empresa.practica", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "titulo": "No hay m\u00e1s que decir", 
+            "imagen": "img/empresa/sea-fan-1-1280x1024.jpg"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "empresa.practica", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "titulo": "Practica X", 
+            "imagen": "img/empresa/abstractcolorbackgroundpicture5016.jpg"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "empresa.practica", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "titulo": "Seguridad X", 
+            "imagen": "img/empresa/a17c6efbb6c8f4393c678812d9d28306.jpg"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "empresa.practica", 
+        "fields": {
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "titulo": "La recucuncuncun", 
+            "imagen": "img/empresa/glamour.jpg"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "productos.categoria", 
+        "fields": {
+            "nombre": "T\u00f3xicos"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "productos.categoria", 
+        "fields": {
+            "nombre": "\u00c1cidos"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "productos.categoria", 
+        "fields": {
+            "nombre": "Bases"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "productos.categoria", 
+        "fields": {
+            "nombre": "Pomadas"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "productos.categoria", 
+        "fields": {
+            "nombre": "Lociones"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "productos.tipo", 
+        "fields": {
+            "categoria": 2, 
+            "nombre": "Acido A"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "productos.tipo", 
+        "fields": {
+            "categoria": 2, 
+            "nombre": "\u00c1cido B"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "productos.tipo", 
+        "fields": {
+            "categoria": 3, 
+            "nombre": "Base A"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "productos.tipo", 
+        "fields": {
+            "categoria": 3, 
+            "nombre": "Base F"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "productos.tipo", 
+        "fields": {
+            "categoria": 1, 
+            "nombre": "Cianuros"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "productos.tipo", 
+        "fields": {
+            "categoria": 1, 
+            "nombre": "Aceite de almendra"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "productos.producto", 
+        "fields": {
+            "imagen": "img/productos/wwwfotologcom-benmask-tunel-informatico.jpg", 
+            "tipo": 1, 
+            "destacado": true, 
+            "precio": 12.34, 
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "Panadol", 
+            "estado": "O"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "productos.producto", 
+        "fields": {
+            "imagen": "img/productos/Weather_Report_78.jpg", 
+            "tipo": 1, 
+            "destacado": true, 
+            "precio": 12.34, 
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "Sulfanil", 
+            "estado": "O"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "productos.producto", 
+        "fields": {
+            "imagen": "img/productos/sleep_dali.jpg", 
+            "tipo": 1, 
+            "destacado": true, 
+            "precio": 12.34, 
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "Bensonil", 
+            "estado": "O"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "productos.producto", 
+        "fields": {
+            "imagen": "img/productos/tensionbysoul116.jpg", 
+            "tipo": 2, 
+            "destacado": true, 
+            "precio": 12.34, 
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "Composalmina", 
+            "estado": "O"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "productos.producto", 
+        "fields": {
+            "imagen": "img/productos/materia.jpg", 
+            "tipo": 2, 
+            "destacado": true, 
+            "precio": 12.34, 
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "Lavativa", 
+            "estado": "O"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "productos.producto", 
+        "fields": {
+            "imagen": "img/productos/fleabass02.jpg", 
+            "tipo": 1, 
+            "destacado": true, 
+            "precio": 23000.0, 
+            "descripcion": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32", 
+            "nombre": "El m\u00e1s corrosivo", 
+            "estado": "A"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_message", 
+            "name": "Can add message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_message", 
+            "name": "Can change message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_message", 
+            "name": "Can delete message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "puede_ayuda", 
+            "name": "Puede entrar a alg\u00fan canal de chat de ayuda", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "puede_chat", 
+            "name": "Puede administrar un canal de chat", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_comentario", 
+            "name": "Can add comentario", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_comentario", 
+            "name": "Can change comentario", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_comentario", 
+            "name": "Can delete comentario", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_post", 
+            "name": "Can add post", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_post", 
+            "name": "Can change post", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_post", 
+            "name": "Can delete post", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_subscripcion", 
+            "name": "Can add Subscripci\u00f3n", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_subscripcion", 
+            "name": "Can change Subscripci\u00f3n", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_subscripcion", 
+            "name": "Can delete Subscripci\u00f3n", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_banner", 
+            "name": "Can add banner", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_banner", 
+            "name": "Can change banner", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_banner", 
+            "name": "Can delete banner", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_acreditacion", 
+            "name": "Can add Acreditaci\u00f3n", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_acreditacion", 
+            "name": "Can change Acreditaci\u00f3n", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_acreditacion", 
+            "name": "Can delete Acreditaci\u00f3n", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_empresa", 
+            "name": "Can add empresa", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_empresa", 
+            "name": "Can change empresa", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_empresa", 
+            "name": "Can delete empresa", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_practica", 
+            "name": "Can add Pr\u00e1ctica", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_practica", 
+            "name": "Can change Pr\u00e1ctica", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_practica", 
+            "name": "Can delete Pr\u00e1ctica", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_categoria", 
+            "name": "Can add Categor\u00eda", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_categoria", 
+            "name": "Can change Categor\u00eda", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_categoria", 
+            "name": "Can delete Categor\u00eda", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_producto", 
+            "name": "Can add producto", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_producto", 
+            "name": "Can change producto", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_producto", 
+            "name": "Can delete producto", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_tipo", 
+            "name": "Can add tipo", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_tipo", 
+            "name": "Can change tipo", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_tipo", 
+            "name": "Can delete tipo", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.group", 
+        "fields": {
+            "name": "clientes", 
+            "permissions": [
+                55
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.group", 
+        "fields": {
+            "name": "managers", 
+            "permissions": [
+                56
+            ]
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "luchojarufe", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2010-09-09 09:21:23", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$45c95$603d6c98aa922d91e4e7168c43bd77be0ba278c0", 
+            "email": "l@l.com", 
+            "date_joined": "2010-09-07 10:46:12"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "Capitan", 
+            "first_name": "Capitan", 
+            "last_name": "Dermolib", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2010-09-07 12:32:29", 
+            "groups": [
+                2
+            ], 
+            "user_permissions": [], 
+            "password": "sha1$aa2e6$7bb3579e8878962beddb1c48eb58edfb5d95a2df", 
+            "email": "luis.jarufe@hotmail.com", 
+            "date_joined": "2010-09-07 10:55:53"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "luisjarufe", 
+            "first_name": "Luis", 
+            "last_name": "Jarufe", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2010-09-09 10:10:20", 
+            "groups": [
+                1
+            ], 
+            "user_permissions": [], 
+            "password": "sha1$5df3e$a0a06e6e8dea4c3171b3bfea944c4e4f7be39f02", 
+            "email": "luis.jarufe@hotmail.com", 
+            "date_joined": "2010-09-07 10:56:44"
+        }
+    }
+]

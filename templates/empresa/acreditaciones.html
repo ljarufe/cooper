@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/empresa/acreditaciones.css"/>
+{% endblock %}
+
+{% block body %}
+    <h1>Acreditaciones</h1>
+    <div class="merge-panel">               
+    <p class="titulo">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+        Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
+        Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+        Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede.
+    </p>
+		<table cellpadding="0" cellspacing="0">
+		    {% for acreditacion in acreditaciones.object_list %}
+		    <tr>
+		        <td>
+		            <div class="acred-section">
+		                <div class="left-panel"><img src="{{ acreditacion.imagen.thumbnail }}" /></div>
+		                <div class="right-panel">
+		                	<div class="title-acred-section">{{ acreditacion.nombre }}</div>
+		                    <div class="text-acred-section">{{ acreditacion.descripcion }}</div>
+		                </div>
+                        <div class="clear"></div>
+		            </div>
+		        </td>
+		    </tr>
+		    {% endfor %}
+		</table>
+		<div class="pagination">
+			<span class="step-links">
+			    {% if acreditaciones.has_previous %}
+			        <a href="?page={{ acreditaciones.previous_page_number }}" class="ant">Anterior</a>
+			    {% endif %}
+	
+			    <span class="current">
+			        P&aacute;gina {{ acreditaciones.number }} de {{ acreditaciones.paginator.num_pages }}.
+			    </span>
+	
+			    {% if acreditaciones.has_next %}
+			        <a href="?page={{ acreditaciones.next_page_number }}" class="sig">Siguiente</a>
+			    {% endif %}
+			</span>
+		</div>
+    </div>
+{% endblock %}

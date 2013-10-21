@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load form_display %}
+
+{% block head %}
+
+	<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/empresa/contactanos.css" media="screen" />
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAMRdj9lILtQvXkiEUNZPsEBQOCZjjZhKZYWqtS461MoMc3NwKjRQR6kpfxS0aezxyvP5G7JGxlXRONg" type="text/javascript"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi" ></script>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAMRdj9lILtQvXkiEUNZPsEBQOCZjjZhKZYWqtS461MoMc3NwKjRQR6kpfxS0aezxyvP5G7JGxlXRONg" type="text/javascript"></script>
+	<script src="http://www.google.com/uds/api?file=uds.js&amp;v=1.0" type="text/javascript"></script>
+	<script src="http://www.google.com/uds/solutions/localsearch/gmlocalsearch.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAMRdj9lILtQvXkiEUNZPsEBQOCZjjZhKZYWqtS461MoMc3NwKjRQR6kpfxS0aezxyvP5G7JGxlXRONg"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+	    function load() {
+	    	if (GBrowserIsCompatible()) {
+				var map = new GMap2(document.getElementById("map"));
+				map.addControl(new GLargeMapControl());
+				map.addControl(new GMapTypeControl());
+				map.addControl(new GScaleControl());
+				map.setCenter(new GLatLng(-16.338039,-71.539723), 17, G_NORMAL_MAP);			
+				function addtag(point, address) {
+					var marker = new GMarker(point);
+					GEvent.addListener(marker, "click", function() { marker.openInfoWindowHtml(address); } );
+					return marker;
+				}
+				
+				var point = new GLatLng(-16.338039,-71.539723);	        
+				var address = '<div class="informacion"><img src="{{ MEDIA_URL }}img/recursos/logo.png"/><p>{{ empresa.direccion }}</p></div>';
+				var marker = addtag(point, address);
+				map.addOverlay(marker);	
+	    	}
+	    }
+	    //]]>	
+		$(document).ready(function(){
+			load();
+		})
+	</script>
+{% endblock %}
+
+{% block body %}
+	<div id="contacto">
+        <h1>Cont&aacute;ctanos</h1>
+        <div class="izq">
+            <h2 class="formulario">Formulario de consultas</h2>
+            <form action="{% url contacto %}" method="post">
+                <ul>
+                    {% display_as_ul form %}
+                    <li class="help">
+                        Los campos marcados con * son requeridos
+                    </li>
+                    <li>
+                        <input class="submit" type="submit" value="Enviar"/>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div id="separator"></div>
+        <div class="der">
+            {% if empresa %}
+                <h2>Informaci&oacute;n</h2>
+                <div>{{ empresa.nombre }}</div>
+                <h2>Direcci&oacute;n</h2>
+                <div>{{ empresa.direccion }}</div>
+                <h2>Tel&eacute;fono</h2>
+                <div>{{ empresa.telefono }}</div>
+                <h2>E-mail</h2>
+                <div>{{ empresa.email }}</div>
+            {% endif %}
+        </div>
+	</div>
+    <div class="clear"></div>
+	<div id="localizacion">
+    	<h2>Google Maps</h2>
+		<div id="map" style="width:500;height:250px;"></div>
+    </div>
+{% endblock %}

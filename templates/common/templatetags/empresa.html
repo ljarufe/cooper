@@ -1,0 +1,43 @@
+<script type="text/javascript">
+	window.onload=function(){
+		
+	}
+</script>
+<div class="titles">            
+        <div class="title-right">
+        	<span><a href="#">Historia</a></span> <span>-</span> 
+        	<span><a href="#">Misi&oacute;n</a></span> <span>-</span> 
+            <span><a href="#">Visi&oacute;n</a></span> <span>-</span> 
+            <span><a href="#">Valores</a></span>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div id="historia" class="slide">
+            <div class="title-left">
+                <h1>Historia</h1>
+            </div>
+            <p>{{ empresa.historia|safe }}</p>
+        </div>
+        
+        <div id="mision" class="slide">
+            <div class="title-left">
+                <h1>Mision</h1>
+            </div>
+            <p>{{ empresa.mision|safe }}</p>
+        </div>
+        
+        <div id="vision" class="slide">
+            <div class="title-left">
+                <h1>Vision</h1>
+            </div>
+            <p>{{ empresa.vision|safe }}</p>
+        </div>
+        
+        <div id="valores" class="slide">
+            <div class="title-left">
+                <h1>Valores</h1>
+            </div>
+            <p>{{ empresa.valores|safe }}</p>
+        </div>
+    </div>

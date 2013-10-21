@@ -1,0 +1,21 @@
+
+#lista_productos {
+	list-style: none;
+	margin: 15px 0px 0px;
+	padding: 0px;
+}
+
+	#lista_productos li {
+		margin: 10px 0px 0px; 
+		padding: 0px;
+	}
+	
+	#lista_productos li img {
+		float: left;
+	}
+	
+	#lista_productos li .descripcion {
+		float: left;
+		width: 340px;
+		margin-left: 10px;
+	}

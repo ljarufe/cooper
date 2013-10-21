@@ -1,0 +1,52 @@
+
+#contacto {
+	width:550px;
+}
+	#contacto h1 {
+		margin-bottom: 10px;
+	}
+	
+	#contacto .izq {
+		float:left;
+		width:250px;
+		padding: 0px 20px;
+		overflow: hidden;
+	}
+	
+	#contacto #separator {
+		background: url(../../img/recursos/separador.png);
+		width:3px;
+		float:left;
+		height:270px;
+		overflow: hidden;
+	}
+	
+	#contacto .der {
+		float:left;
+		width: 237px;
+		text-align:justify;
+		font-size:smaller;
+		color:#414141;
+		padding-left: 20px;
+	}
+	
+		#contacto .der div {
+			margin-bottom: 10px;
+		}
+		
+	#localizacion {
+		padding: 20px 0px 20px 20px;
+		position: relative;
+	}
+	
+		#localizacion #map {
+			position:relative;
+			border:1px solid #aaa;
+		}
+		
+			#localizacion #map p {
+				color: #808080;
+				text-align: center;
+				margin: 5px 0px 0px;
+				padding: 0px;
+ 			}

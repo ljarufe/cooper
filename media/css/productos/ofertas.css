@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#panel_izq table{
+	margin-top: 10px;
+}
+#panel_izq table tr td {
+	padding:5px;
+	border-bottom: 1px solid #CCC;
+	text-align:center;
+}
+#panel_izq table thead tr td{
+	color: #808080;
+	font-size: 14px;
+}
+#panel_izq table tfoot tr td{
+	color: #808080;
+}
+#panel_izq table tbody tr td{
+	text-align:justify;
+	font-size:11px;
+}
+

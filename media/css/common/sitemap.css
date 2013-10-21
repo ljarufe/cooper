@@ -1,0 +1,18 @@
+#sitemap {
+	background:url(../../img/recursos/logo.png) 270px center no-repeat;
+}
+	#sitemap ul {
+		color: #333;
+		list-style-image: url(../../img/recursos/lista.gif);
+	}
+	
+		#sitemap li {
+		}
+a{
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}

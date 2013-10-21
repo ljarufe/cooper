@@ -1,0 +1,18 @@
+<div class="principal-menu">
+    <ul id="MenuBar1" class="MenuBarHorizontal MenuBarActive">
+    {% for item in menu %}
+        <li>
+            <a href="" class="MenuBarItemSubmenu">{{ item.categoria.nombre }}</a>
+            <ul>
+            {% for tipo in item.tipos %}
+                <li>
+                    <a href="{% url destacados item.categoria.id tipo.id %}">{{ tipo.nombre }}</a>
+                </li>
+            {% endfor %}
+            	<li class="last_li"><a href="#"></a></li>
+            </ul>
+        </li>
+    {% endfor %}
+    <div class="clear" ></div>
+    </ul>
+</div>

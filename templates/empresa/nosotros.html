@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/empresa/nosotros.css"/>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var pr = 0;//en la posision donde se encuentra
+		var c = 0; // contador de la diferencia entre donde nos encontramos(pr) y donde hacemos click(al)
+		var con = 0; // cuanto se tiene  q mover
+		var num = 565;
+		$(".titles span a").click(function(event){
+			al = $(this).attr("class");
+			if (pr == al) {
+				pr = al;
+				return false;
+			}
+			if (pr < al) {
+				c = al - pr;
+				c = (c * num);
+				con = con - c;
+				$(".content").animate({
+					"left": con
+				}, 1000);
+				pr = al;
+				return false;
+			}
+			if (pr > al) {
+				c = pr - al;
+				c = (c * num);
+				con = con + c;
+				$(".content").animate({
+					"left": con
+				}, 1000);
+				pr = al;
+				return false;
+			}
+			
+			event.preventDefault();
+			return false;
+		});
+	})
+		
+	</script>
+{% endblock %}
+
+{% block body %}
+	<div class="titles" style="z-index:10; position: relative;">            
+        <div class="title-right">
+        	<span class="emp"><a class="0" href="#">Historia</a></span><span> · </span> 
+        	<span class="emp"><a class="1" href="#">Misi&oacute;n</a></span><span> · </span> 
+            <span class="emp"><a class="2" href="#">Visi&oacute;n</a></span><span> · </span> 
+            <span class="emp"><a class="3" href="#">Valores</a></span>
+        </div>
+    </div>
+    <div class="elem">
+        <div class="content">
+            <div id="historia" class="slide">
+                <div class="title-left">
+                    <h1>Historia</h1>
+                </div>
+                <p>{{ empresa.historia|safe }}</p>
+            </div>
+            
+            <div id="mision" class="slide">
+                <div class="title-left">
+                    <h1>Mision</h1>
+                </div>
+                <p>{{ empresa.mision|safe }}</p>
+            </div>
+            
+            <div id="vision" class="slide">
+                <div class="title-left">
+                    <h1>Vision</h1>
+                </div>
+                <p>{{ empresa.vision|safe }}</p>
+            </div>
+            
+            <div id="valores" class="slide">
+                <div class="title-left">
+                    <h1>Valores</h1>
+                </div>
+                <p>{{ empresa.valores|safe }}</p>
+            </div>
+        </div>
+	</div>
+{% endblock %}

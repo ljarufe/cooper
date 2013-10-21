@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/productos/productos.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    <h1>Productos Destacados</h1>
+    <ul id="lista_productos">
+    {% for producto in productos %}
+        <li>
+        	<img src="{{ producto.imagen.thumbnail }}" alt="{{ producto.nombre }}" title="{{ producto.nombre }}" />
+            <div class="descripcion">
+            	<h3>{{ producto.nombre }}</h3>
+            	<p>{{ producto.descripcion|safe }}</p>
+           	</div> 
+            <div class="clear"></div>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

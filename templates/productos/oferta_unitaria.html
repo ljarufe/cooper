@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/css/productos/ofertas.css"/>
+{% endblock %}
+
+{% block body %}
+    <h1>Productos en Oferta</h1>
+	<table>
+		<thead>
+			<tr>
+    			<td>Nombre Producto</td>
+				<td>Descripci&oacute;n Producto</td>
+				<td>Imagen Producto</td>
+				<td>Precio</td>
+    		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>{{ productos.nombre }}</td>
+				<td>{{ productos.descripcion }}</td>
+				<td><img src="{{ productos.imagen.thumbnail }}"/></td>
+				<td>{{ productos.precio }}</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">Laboratorios La Cooper - Ofertas</td>
+			</tr>
+		</tfoot>
+	</table>
+{% endblock %}

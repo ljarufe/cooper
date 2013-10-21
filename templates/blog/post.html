@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load form_display %}
+{% load blogtags %}
+{% load truncate %}
+
+{% block head %}
+   <meta name="title" content="{{ post.titulo }}" />
+   <meta name="description" content="{{ post.texto|trunc_char:'200' }}" />
+   <meta name="medium" content="blog" />
+   <link rel="image_src" href="{{ MEDIA_URL }}img/recursos/logo.png" />
+   <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+   <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+   <link href="{{ MEDIA_URL }}css/blog/blog.css" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+   <!-- Lista de posts -->
+   <div id="indice_posts">
+      <h2>Lista de Posts</h2>
+      <ul>
+      {% for post in indice_posts %}
+         <li>
+            <a href="{% url blog post.id %}" title="{{ post.titulo }}">{{ post.titulo }}</a>
+         </li>
+      {% endfor %}
+      </ul>
+      <a class="mas" href="{% url lista_posts %}">Ver mas posts...</a>
+   </div>
+	
+   <div class="titles">
+      <div class="title-left">
+         <h1>Blog</h1>
+      </div>        
+      <div class="title-right">
+         <h2>Laboratorios La Cooper</h2>
+      </div>
+      <div class="clear"></div>
+   </div>
+    
+   <div class="merge-panel">
+      <div class="titulo">{{ post.titulo }}</div>
+      <div class="date">{{ post.fecha|date:"l d \d\e F \d\e\l Y" }} - {{ comentarios|length }} comentario{{ comentarios|pluralize }}</div>         
+      <div id="carousel-comments">{{ post.texto|safe }}</div>
+      <hr/>
+      <div class="option-panel">
+         <div class="share">
+               <!--Compartir este art&iacute;culo en <a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Compartir</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script> <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-lang="es">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
+               <div class="label-share">Compartir este articulo en</div> 
+               <a name="fb_share" type="button_count">Compartir</a>
+               <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="luisjarufe" data-lang="es">Tweet</a>
+         </div>
+         <div class="selection">
+            <div>
+               <span>
+                  <a href="{% blog_next_url post.id %}" id="prev">◄ Anterior</a></span> · <span><a href="{% blog_previous_url post.id %}" id="next">Siguiente ►</a>
+               </span>
+            </div>
+        </div>
+      	<div class="clear"></div>   
+      </div>
+      <div class="clear"></div>     
+          <h2 class="title-comentarios">Comentarios</h2>
+          {% for comentario in comentarios %}
+          <div class="panel-comments">
+              <div class="title">
+                  Publicado por <b>{{ comentario.nombre }}</b>
+                  el {{ comentario.fecha|date:"l d \d\e F \d\e\l Y" }}
+              </div>
+              <div class="text">
+                  {{ comentario.comentario }}
+              </div>
+          </div>
+          <div class="panel-comments-foot"></div>
+		{% endfor %}
+         <div class="send-comments">
+            <h2 class="title-comentarios">Envia tus comentarios</h2>
+            {% if comentado %}
+            <span>Tu comentario ha sido enviado y está pendiente de moderación.</span>
+            {% endif %}
+            <form method="post" action="">
+               <ul>
+                  {% display_as_ul form %}
+                  <li class="help">Los campos marcados con * son requeridos</li>
+                  <li>
+                      <input class="submit" type="submit" value="Comentar" />
+                  </li>
+               </ul>
+            </form>
+         </div>
+      </div>
+	<script>
+		$(document).ready(function() {
+			$('#ofertas-panel').after($('#indice_posts'));
+		})
+	</script>
+{% endblock %}

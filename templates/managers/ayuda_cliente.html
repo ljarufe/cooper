@@ -1,0 +1,30 @@
+{% extends 'chat_base.html' %}
+
+{% block head %}
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/managers/ayuda_cliente.js"></script>
+
+	<script type="text/javascript" charset="utf-8">			
+		var sender = "{{ user }}";
+		
+		var url_send_message = "{% url send_message %}";
+		var url_sound = "{{ MEDIA_URL }}sound/alert.wav";
+					
+		Orbited.settings.port = {{ port }};
+	    Orbited.settings.hostname = "{{ hostname }}";
+	    TCPSocket = Orbited.TCPSocket
+	</script>
+{% endblock %}
+
+{% block body %}
+	<h1>Asistencia en l&iacute;nea a clientes</h1>
+	    
+    <div id="user">
+        <ul>
+            <li>{{ user.get_full_name }}: <span id="status"></span></li>
+            <li>Opciones: <span id="sonido">Desactivar sonido</span></li>
+        </ul>
+        <input type="hidden" name="user" value="{{ user }}" id="user">
+    </div>
+
+	<div id="chat-frame"></div>
+{% endblock %}

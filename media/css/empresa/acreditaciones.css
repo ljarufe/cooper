@@ -1,0 +1,26 @@
+.acred-section {
+	width: 510px;
+	margin: 20px 20px 0px;
+}
+
+	.acred-section .left-panel {
+		width: 100px;
+		height: 100px;
+		margin-right: 10px;
+		float: left;
+	}
+		
+		.acred-section .left-panel img { 
+			width: 100px;
+			height: 100px;
+		}
+
+	.acred-section .right-panel {
+		width: 390px;
+		float: left;
+		margin-left: 10px;
+	}
+		.acred-section .right-panel .title-acred-section {
+			font-size: 18px;
+			color: #808080;
+		}

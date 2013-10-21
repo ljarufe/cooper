@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* Estilos IE6 */
+
+/* Arreglo de PNG en IE6 */
+#logo img, #botonera, #inicio_sesion .input, #sitemap, .logo { 
+	behavior: url('/media/js/common/iepngfix/iepngfix.htc') 
+}
+
+/* Generales */
+div {
+	overflow: hidden;
+}
+
+/* Cabecera */
+	#cabecera #superior #option #user {
+		display: inline-block;
+		margin: 0px;
+		padding: 0px 5px 0px !important;
+		height: 18px;
+	}
+	
+	
+	#cabecera #superior #option .vinieta_ie6 {
+		position: relative;
+		top: -3px;
+	}
+	
+	#inicio_sesion td {
+		padding-top: 2px !important;
+	}
+	#inicio_sesion form {
+		margin: 0px;
+	}
+	#cabecera #superior #option #sec_inferior {
+		margin-top: 4px;
+	}
+
+		#cabecera #superior #option .vinieta {
+			display: inline-block;
+			left: 12px;
+		}
+		
+	.search_box_all {
+		margin-left: -40px;
+	}
+		
+/* Derecha */
+	.imagen, .imagen img {
+		border: 0px;
+	}
+	
+	#botonera {
+		overflow: visible;
+	}
+/* Subscripcion*/
+
+	label input{
+		width: 15px !important;
+		height: 15px !important;
+	}
+	
+/* Blog */
+
+	.merge-panel hr{
+		margin: 0px;
+		padding: 0px;
+		height: 0px;
+	}
+
+/* Mapa de Sitio */
+	
+	#sitemap {
+		background-position: 230px center !important;
+	}
+	
+/* 404 500*/
+
+	ul {
+		margin-left: 40px;
+	}

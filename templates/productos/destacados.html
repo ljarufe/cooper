@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/productos/productos.css" media="screen" />
+	
+	<script type="text/javascript">
+        // Opciones personalizadas para este tipo de producto
+	    var header_bgcolor = "#{{ tipo.header_bgcolor }}";
+	    var font_color = "#{{ tipo.font_color }}";
+	    var break_color = "#{{ tipo.break_color }}";
+		var media_url = "{{ MEDIA_URL }}";
+	    var header_img = "{{ tipo.header_img }}";
+	    var banners = [];
+	    {% for banner in banners %}
+	    	banners.push("{{ banner.imagen.thumbnail }}");
+	    {% endfor %}
+	    
+	    $(document).ready(function() {
+					
+	    	if(font_color != "") {
+	    		$("#option").css("color", font_color);
+		    	$("#option ul li a").css("color", font_color);
+	    	}
+	    	if(header_img != "") {
+				//Eliminar el Banner Principal
+				$("#principal").remove();
+				//Colocar el template
+	    		$("#cabecera").css("backgroundImage", "url(" + media_url + header_img + ")");
+				$("#cabecera").css("backgroundColor", header_bgcolor);
+				$("#cuerpo").css("backgroundImage", "url(" + media_url + header_img + ")"); 
+				$("#sec_inferior,.vinieta").css("borderColor", break_color);
+				$(".vinieta").css("color",break_color)
+				//IE6
+				$("#cuerpo").css("backgroundColor", "#FFFFFF"); 
+	    	}
+	    })
+	    	    
+	</script>
+{% endblock %}
+
+{% block body %}
+    <h1>Productos Destacados</h1>
+    <h2>Tipo {{ tipo.nombre|lower }} de la categoría {{ categoria|lower }}</h2>
+    <ul id="lista_productos">
+    {% for producto in productos %}
+        <li>
+        	<img src="{{ producto.imagen.thumbnail }}" alt="{{ producto.nombre }}" title="{{ producto.nombre }}" />
+            <div class="descripcion">
+            	<h3>{{ producto.nombre }}</h3>
+            	<p>{{ producto.descripcion }}</p>
+           	</div> 
+            <div class="clear"></div>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

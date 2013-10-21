@@ -1,0 +1,7 @@
+<ul>
+{% for manager in managers %}
+    <li>
+        <a href="javascript:popUp('{% url ayuda_en_linea manager.username %}')">{{ manager.get_full_name }}</a>
+    </li>
+{% endfor %}
+</ul>

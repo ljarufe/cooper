@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    {% if no_email %}
+    <h3>Tendrá que contactarse con el administrador porque Ud. no posee un e-mail asignado.</h3>
+    {% else %}
+    <h3>Verifique su correo para confirmar la acción.</h3>
+    {% endif %}
+{% endblock %}

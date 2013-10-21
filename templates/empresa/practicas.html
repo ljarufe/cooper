@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/empresa/practicas.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block body %}
+    <h1>Prácticas</h1>
+    <p class="parrafo_inicial">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+        Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
+        Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+        Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede.
+    </p>
+    <div class="merge-panel">
+        {% for practica in practicas.object_list %}
+			<div class="textos">
+				<div class="img_textos">
+				{% if practica.imagen %}
+					<img src="{{ practica.imagen.thumbnail }}"/>
+				{% endif %}
+				</div>
+				<div class="desc_textos">
+					<h2 class="titulo">{{ practica.titulo }}</h2>
+					{{ practica.descripcion|safe }}
+				</div>
+			</div>	   		
+       {% endfor %}
+    </div>
+	<div class="pagination">
+	    <span class="step-links">
+	        {% if practicas.has_previous %}
+	            <a href="?page={{ practicas.previous_page_number }}" class="ant">Anterior</a>
+	        {% endif %}
+	
+	        <span class="current">
+	            P&aacute;gina {{ practicas.number }} de {{ practicas.paginator.num_pages }}.
+	        </span>
+	
+	        {% if practicas.has_next %}
+	            <a href="?page={{ practicas.next_page_number }}" class="sig">Siguiente</a>
+	        {% endif %}
+	    </span>
+	</div>
+{% endblock %}
